@@ -1,6 +1,6 @@
 from pytube import YouTube
 
-def Download(link):
+def download(link):
     youTubeObject = YouTube(link)
     highestResolutionObject = youTubeObject.streams.get_highest_resolution() #.streams will give the options
     
@@ -11,6 +11,6 @@ def Download(link):
     print("Download completed.")
     
 link = input("Enter video link: ")
-Download(link)
+download(link)
     
     
